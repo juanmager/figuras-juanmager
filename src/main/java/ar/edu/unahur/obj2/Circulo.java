@@ -1,5 +1,7 @@
 package ar.edu.unahur.obj2;
 
+import java.util.Objects;
+
 public class Circulo extends Figura {
 
     private Integer radio;
@@ -13,7 +15,4 @@ public class Circulo extends Figura {
         return  Math.PI*Math.pow(radio,2);
     }
 
-    public Double perimetro() {
-        return 2*Math.PI*radio;
-    }
 }

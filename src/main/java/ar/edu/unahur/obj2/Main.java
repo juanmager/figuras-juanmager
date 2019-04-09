@@ -9,7 +9,8 @@ public class Main {
 
         String radioInput = JOptionPane.showInputDialog("Ingrese el radio del circulo 1");
         Integer radio1 = Integer.parseInt(radioInput);
-        Circulo circulo1 = new Circulo(radio1);
+        String color = "rojo";
+        Circulo circulo1 = new Circulo(color, radio1);
         JOptionPane.showMessageDialog(null, "Superficie: " + circulo1.area(),"Superficie",JOptionPane.INFORMATION_MESSAGE);
 
 
