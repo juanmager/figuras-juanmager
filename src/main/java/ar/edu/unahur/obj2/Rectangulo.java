@@ -1,7 +1,5 @@
 package ar.edu.unahur.obj2;
 
-import java.util.Objects;
-
 public class Rectangulo extends Figura {
 
     private Integer base;
@@ -9,13 +7,27 @@ public class Rectangulo extends Figura {
 
     public Rectangulo(String color, Integer base, Integer altura) {
         super(color);
+        validarDimension(base);
+        validarDimension(altura);
+
         this.base = base;
         this.altura = altura;
     }
 
     @Override
     public Double area() {
-        return null;
+        return (double)base*altura;
     }
 
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("Rectangulo{");
+        sb.append("color='").append(getColor()).append('\'');
+        sb.append("regular='").append(regular()).append('\'');
+        sb.append("area=").append(area());
+        sb.append("base=").append(base);
+        sb.append(", altura=").append(altura);
+        sb.append('}');
+        return sb.toString();
+    }
 }
