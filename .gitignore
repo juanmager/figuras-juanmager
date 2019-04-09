@@ -5,8 +5,6 @@
 .metadata
 target/
 test-output/
-jarvis-server/src/main/resources/conf/env/envirorment.properties
-jarvis-server/src/main/resources/conf/env/cassandra-driver.conf
 *.iml
 .idea
 *.ipr
