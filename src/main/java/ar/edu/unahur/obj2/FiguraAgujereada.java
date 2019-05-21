@@ -5,8 +5,15 @@ public class FiguraAgujereada extends Figura {
     private Figura figura;
 
     public FiguraAgujereada(Figura figura) {
-        super(figura.getColor());
         this.figura = figura;
+    }
+    
+    public void pintar(Color color) {
+        this.figura.pintar(color);    
+    }
+    
+    public Color getColor() {
+        return this.figura.getColor();
     }
 
     @Override
